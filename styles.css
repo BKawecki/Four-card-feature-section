@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.heading {
+    margin-bottom: 1em;
+}
+
+.heading h1 {
+    color: hsl(234, 12%, 34%);
+}
+
+.heading p {
+    font-size: 2em;
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+}
+
+.intro-text {
+    width: 40%;
+    text-align: center;
+}
+
+.intro-text p {
+    color: hsl(229, 6%, 66%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.first-column-wrapper, .second-column-wrapper, .third-column-wrapper {
+    width: 25%;
+    display: flex;
+    margin: 0 1em;
+}
+
+.first-column-wrapper, .third-column-wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-column-wrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.supervisor-card, .team-builder-card, .karma-card, .calculator-card {
+    display: flex;
+    background-color: white;
+    border-top: solid 4px hsl(180, 62%, 55%);
+    padding: 2em;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: -8px 16px 21px -1px rgb(222 222 228);
+}
+
+.supervisor-text h3, .team-builder-text h3, .karma-text h3, .calculator-text h3 {
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0.5em;
+}
+
+.supervisor-text p, .team-builder-text p, .karma-text p, .calculator-text p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.supervisor-card img, .team-builder-card img, .karma-card img, .calculator-card img {
+    width: 60px;
+    align-self: end;
+}
+
+.team-builder-card {
+    border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+.karma-card {
+    border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    .heading p, .heading h1 {
+        font-size: 1.5em;
+    }
+
+    .intro-text {
+        width: 90%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .first-column-wrapper, .second-column-wrapper, .third-column-wrapper {
+        display: flex;
+        margin: 1em;
+        width: auto;
+    }
+
+    .team-builder-card {
+        margin-bottom: 2em;
+    }
+
+}
